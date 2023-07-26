@@ -1,0 +1,41 @@
+/*CREATING AN ANIMATED LOADING SCREEN FOR SQUARESPACE (7.0 & 7.1)*/
+//To style the whole screen container
+.loading-screen {
+    animation: goodbyeScreen 0.5s forwards 3.5s cubic-bezier(0.5, -0.75, 0.7, 2);
+    background-color: #fafafa;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+//To style the logo or image
+.loading-screen-image {
+    animation: scrollingLogo 1 3s linear;
+    background-image: url(/assets/images/loading/loading.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 190px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 190px;
+}
+
+//Animation for the scrolling logo
+@keyframes scrollingLogo {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+//Animation for the sliding screen
+@keyframes goodbyeScreen {
+    to {
+        transform: translateX(-100%);
+    }
+}

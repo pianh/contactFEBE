@@ -1,0 +1,23 @@
+.not-found-page {
+    padding-left: 450px;
+    padding-right: 450px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    h3 {
+        font-size: 58px;
+        font-weight: 400;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    .not-found__button {
+        margin-top: 50px;
+        border: 1px solid var(--tp-heading-primary);
+        color: var(--tp-heading-primary);
+        animation: none;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
